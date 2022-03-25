@@ -1,0 +1,145 @@
+:root {
+	/* Primary */
+	--darkblue01: #cfd4ed;
+	--darkblue02: #aeb7e1;
+	--darkblue03: #5e70c4;
+	--darkblue04: #0d28a6;
+	--darkblue05: #091b6f;
+
+	--limegreen01: #def1df;
+	--limegreen02: #c9e7ca;
+	--limegreen03: #92d094;
+	--limegreen04: #5cb85f;
+	--limegreen05: #3d7b3f;
+
+	/* Alert */
+	--success: #73ca5c;
+	--warning: #f9cc00;
+	--danger: #fa2c5a;
+}
+
+/* Fonts */
+
+h1 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 150%;
+}
+
+h2 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+h3 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+h4 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+h5 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+a,
+span,
+button {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+h5 button {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/* backgrounds */
+
+.bg-light {
+	background: #f1f3ff;
+}
+
+.bg-blue04 {
+	background: var(--darkblue04);
+}
+
+.bg-green04 {
+	background: var(--limegreen04);
+}
+
+/* components */
+
+.logo {
+	background: var(--darkblue04);
+	width: 100px;
+	height: 34px;
+}
+
+.hero {
+	height: 500px;
+}
+
+.hero__right {
+	position: relative;
+	height: 407px;
+}
+
+.hero__right--bg {
+	position: absolute;
+	width: 704px;
+	height: 243px;
+	right: 0;
+	bottom: 0;
+	background: var(--darkblue04);
+	border-radius: 60px 0px 0px 0px;
+}
+
+.hero__right--img {
+	position: absolute;
+	width: 704px;
+	height: 407px;
+	right: 0;
+	bottom: 0;
+}
+
+/* customs */
+
+.py-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/* overwrites */
+
+.accordion-item {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
