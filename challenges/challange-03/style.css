@@ -100,30 +100,34 @@ h5 button {
 }
 
 .hero {
-	height: 500px;
+	padding-top: 45px;
+	height: 100%;
 }
 
 .hero__right {
 	position: relative;
-	height: 407px;
-}
-
-.hero__right--bg {
-	position: absolute;
-	width: 704px;
-	height: 243px;
-	right: 0;
-	bottom: 0;
-	background: var(--darkblue04);
-	border-radius: 60px 0px 0px 0px;
+	height: 100%;
+	width: 100%;
+	min-height: 407px;
 }
 
 .hero__right--img {
 	position: absolute;
-	width: 704px;
-	height: 407px;
+	width: 100%;
 	right: 0;
 	bottom: 0;
+}
+
+.services__left {
+	display: flex;
+	justify-content: center;
+}
+.services__left--img {
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 20%;
+	width: 100%;
+	height: 100%;
 }
 
 /* customs */
@@ -142,4 +146,33 @@ h5 button {
 .accordion-button {
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+@media (max-width: 992px) {
+	.hero {
+		flex-direction: column;
+	}
+	.hero__left {
+		align-self: auto !important;
+		width: auto;
+	}
+	.hero__right--img {
+		height: 100%;
+	}
+
+	.services {
+		flex-direction: column;
+	}
+
+	.about__right {
+		flex-direction: column;
+	}
+
+	.footer {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.footer * {
+		flex: 0 0 auto !important;
+	}
 }
