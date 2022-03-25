@@ -93,10 +93,56 @@ h5 button {
 
 /* components */
 
+.green-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: rgba(92, 184, 95, 1);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 2px;
+	border-width: 0;
+}
+
+.green-button a {
+	padding: 0 !important;
+	margin: 0 !important;
+	color: white !important;
+	font-weight: 700;
+}
+
+.stars {
+	width: 100px;
+	display: flex;
+	flex-direction: row;
+}
+
 .logo {
 	background: var(--darkblue04);
 	width: 100px;
 	height: 34px;
+}
+
+.navbar {
+	background-color: rgba(241, 243, 255, 1);
+}
+
+.navbar-nav {
+	position: absolute;
+	padding-right: 12px;
+	right: 0;
+}
+.navbar-collapse {
+	flex-grow: 0;
+	justify-content: flex-end;
+	z-index: 1000;
+}
+
+.navbar-nav .nav-item {
+	margin-left: 32px;
 }
 
 .hero {
@@ -149,6 +195,41 @@ h5 button {
 }
 
 @media (max-width: 992px) {
+	.navbar-collapse {
+		position: fixed;
+		background: rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		top: 0;
+		right: 0;
+		overflow: hidden;
+	}
+	.navbar-collapse.collapsing {
+		height: 0% !important;
+		transition: background-color 0.35s ease;
+	}
+
+	.navbar-collapse.show .navbar-nav {
+		left: 50%;
+	}
+
+	.navbar-nav {
+		padding-top: 34px;
+		background-color: white;
+		height: 100%;
+		width: 50%;
+		position: absolute;
+		padding-right: 30px;
+		left: 100%;
+		transition: left 0.35s ease;
+	}
+
+	.navbar-nav .nav-item {
+		margin-left: 16px;
+	}
+
 	.hero {
 		flex-direction: column;
 	}
@@ -174,5 +255,13 @@ h5 button {
 	}
 	.footer * {
 		flex: 0 0 auto !important;
+	}
+
+	.owl-item .row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.owl-item .row .flex-column {
+		align-items: center;
 	}
 }
