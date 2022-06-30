@@ -1,0 +1,477 @@
+/*********************************************/
+/* RESET STYLE */
+body {
+    overflow-x: hidden;
+}
+  
+a {
+    text-decoration: none;
+}
+  
+/*********************************************/
+  
+/*********************************************/
+/* MAIN STYLE */
+  
+    /* WIDTH STYLE */
+    .w-10 {
+        width: 10% !important;
+    }
+    
+    .w-37-5 {
+        width: 37.5% !important;
+    }
+    
+    .w-62-5 {
+        max-width: 62.5% !important;
+    }
+
+    .w-75{
+        max-width: 75% !important;
+    }
+    
+    .w-90 {
+        max-width: 90% !important;
+    }
+    
+    .w-100 {
+        max-width: 100% !important;
+    }
+    
+    .w-130 {
+        width: 130%;
+    }
+  
+    /* HEIGHT STYLE */
+    .h-95 {
+        height: 95%;
+    }
+    
+    .h-90 {
+        height: 90%;
+    }
+    
+    .h-87-5 {
+        height: 87.5%;
+    }
+    
+    .h-62-5 {
+        height: 62.5%;
+    }
+    
+    .vh-50 {
+        height: calc(50vh + 70px);
+    }
+    
+    .vh-62-5 {
+        height: calc(62.5vh + 70px);
+    }
+    
+    .vh-75 {
+        height: calc(75vh + 70px);
+    }
+    
+    .vh-87-5 {
+        height: calc(87.5vh + 70px);
+    }
+  
+    .text-tipis {
+        font-weight: 300;
+        font-size: 10pt;
+    }
+    
+    .text-small {
+        font-size: 13px;
+    }
+
+    .text-very-small{
+        font-size: 12px;
+    }
+  
+    /* BACKGROUND STYLE */
+    .bg-yellow {
+        background-color: yellow;
+    }
+    
+    .bg-limegreen05 {
+        background-color: rgb(61, 123, 63);
+    }
+    
+    .bg-limegreen04 {
+        background-color: rgb(92, 184, 95);
+        border: none;
+    }
+    
+    .bg-limegreen03 {
+        background-color: rgb(146, 208, 148);
+    }
+    
+    .bg-limegreen02 {
+        background-color: rgb(201, 231, 202);
+    }
+    
+    .bg-limegreen01 {
+        background-color: rgb(222, 241, 223);
+    }
+    
+    .bg-green {
+        background-color: #df9947;
+    }
+    
+    .bg-darkblue05 {
+        background-color: rgb(5, 27, 111);
+    }
+    
+    .bg-darkblue04 {
+        background-color: rgb(12, 40, 166);
+    }
+    
+    .bg-darkblue03 {
+        background-color: rgb(94, 112, 196);
+    }
+    
+    .bg-darkblue02 {
+        background-color: rgb(174, 183, 226);
+    }
+    
+    .bg-darkblue01 {
+        background-color: #F1F3FF;
+    }
+
+    .bg-white {
+        background-color: whitesmoke;
+    }
+  
+    /* COLOR STYLE */
+    .color-black {
+        color: black !important;
+    }
+    
+    .color-yellow {
+        color: #df9947;
+    }
+
+    .color-gold {
+        color: gold;
+      }
+  
+    /* SPACING STYLE */
+    .flex-grow-init {
+        flex-grow: initial;
+    }
+    
+    
+    .justify-content-evenly {
+        justify-content: space-evenly;
+    }
+    
+    .nowrap {
+        flex-wrap: nowrap;
+    }
+    
+    .no-padding {
+        padding: 0;
+    }
+    
+    .py-7-5 {
+        padding: 7.5rem 0;
+    }
+    
+    .padding-top-70 {
+        padding-top: 70px !important;
+    }
+    
+    .padding-bot-50 {
+        padding-bottom: 50px;
+    }
+  
+    /* OTHER STYLE */
+    .circle {
+        border-radius: 50%;
+    }
+    
+    .border-rad-25 {
+        border-radius: 25px;
+    }
+    
+    .no-border {
+        border: none;
+    }
+    
+    .overflowx-hidden {
+        overflow-x: hidden;
+    }
+
+    .overflow-ellipsis{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .text-align-initial {
+        text-align: initial;
+    }
+    
+    .light-shadow {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .medium-shadow {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .full-shadow{
+        box-shadow: 0px 0px 0px 100vmax rgba(0, 0, 0, 0.65);
+        user-select: none;
+    }
+    .z-1000{
+        z-index: 10000;
+    }
+    /*********************************************/
+  
+/*********************************************/
+/* CUSTOM STYLE */
+.filter{
+    position: relative;
+    z-index: 1000;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+
+.filter *{
+    transition: transform 0.25s;
+}
+
+input{
+    position: relative;
+    z-index: 10;
+    color: #8A8A8A;
+    margin-top: 5px;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+label{
+    font-size: 10pt;
+}
+/*********************************************/
+/* INPUT DRIVER */
+.option{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    overflow-y: auto;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 24px) !important;
+    z-index: 1000;
+}
+
+.option div, .option p{
+    background-color: white;
+    font-size: small;
+    width: 100%;
+    padding: 5px 12px;
+    margin: 0;
+}
+
+.option.date{
+    position: absolute;
+    top: 31%;
+    height: auto;
+    height: initial;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.option div:hover, .option p:hover{
+    background-color: #c9e7ca;
+    transform: scaleX(1.1);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.input.selected{
+    border: 1px solid #5cb85f;
+}
+
+.option.show{
+    display: block;
+    overflow-x: hidden;
+}
+
+.input.selected ~ label i {
+    transform: rotate(180deg);
+}
+/*********************************************/
+input[type=date]{
+    display: block !important;
+}
+
+
+
+.search-button{
+    padding: 6px;
+}
+.cars-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.cars-container > .card > img{
+    height: 222px;
+    object-fit: cover;
+    border-radius: 2px;
+
+}
+.card-body > div > p{
+    margin: 0;
+    font-size: 10pt;
+}
+
+input{
+    padding: 5px 5%;
+    padding-right: 30px;
+}
+
+.brand {
+    width: 100px;
+    height: 34px;
+}
+
+.icon-card{
+    width: 20px;
+    height: 20px;
+}
+
+
+.icon-form{
+    position: absolute;
+    bottom: 15%;
+    right: 12.5%;
+    z-index: 100;
+}
+
+.icon-connect-with-us {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 5px;
+}
+
+.popup{
+    position: fixed;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5cb85f;
+    z-index: 1000000000000000000;
+    padding: 5px 5%;
+    color: white;
+    opacity: 0;
+    border-radius: 5px;
+    animation: none;
+}
+
+.popup p{
+    margin: 0;
+}
+
+.popup.show{
+    animation: show 2.5s ease forwards;
+} 
+
+@keyframes show {
+    0%, 100%{
+        top: -300px;
+        opacity: 0;
+    }
+
+    25%, 75%{
+        top: 75px;
+        opacity: 1;
+    }
+}
+
+/*********************************************/
+@media screen and (max-width: 991px) {
+    .main-title-inner {
+        width: 90% !important;  
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: initial;
+    }
+    .offcanvas-end {
+        width: 50%;
+    }
+    
+    .offcanvas-end .offcanvas-header {
+        padding: 0;
+    }
+
+    .offcanvas-end .offcanvas-header button {
+        position: absolute;
+        top: 1em;
+        right: 10%;
+        margin-top: 0;
+        z-index: 10;
+    }
+
+    .offcanvas-body {
+        position: absolute;
+        top: 1rem;
+        padding: 0 2.5vw;
+    }
+
+    .company-name {
+        margin: 0;
+        font-weight: 900;
+        color: black !important;
+    }
+    .modal-content.full-shadow{
+        box-shadow: none;
+    } 
+
+    .submit-button{
+        margin: 10px 0;
+    }
+    .icon-form{
+        right: 7.5%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    .modal-backdrop.fade.show,
+    .offcanvas-end .offcanvas-header,
+    .company-name {
+        display: none;
+    }
+
+    .offcanvas-end {
+        position: relative;
+        flex-direction: row;
+        visibility: visible !important;
+        transform: none;
+        background-color: transparent;
+        border: none;
+        width: initial;
+    }
+    
+    .offcanvas-end .offcanvas-body {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+}
